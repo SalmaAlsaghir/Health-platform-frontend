@@ -1,0 +1,247 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the login form */
+.login-container {
+  display: flex;
+  background-color: #b3cde0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(100vw - 400px);
+  height: calc(100vh - 400px);
+  padding: 200px;
+}
+
+.login {
+  padding: 40px;
+  width: 50%;
+  background-color: #fff;
+}
+
+.login__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.login__input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login__button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4400ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login__button:hover {
+  background-color: #0056b3;
+}
+
+.login__google-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.login__google-button img {
+  margin-right: 10px;
+}
+
+.login__google-button:hover {
+  background-color: #f1f1f1;
+}
+
+.login__footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #555;
+}
+
+.login__footer a {
+  text-decoration: none;
+}
+
+.login__footer a:hover {
+  text-decoration: underline;
+}
+
+/* Side panel */
+.login__side-panel {
+  background-image: url('../../assets/loginpattern.webp'); /* Update the path as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__side-panel img {
+  width: 50%;
+  height: auto;
+}
+
+/* Container for the register form */
+.register_container {
+  display: flex;
+  background-color: #b3cde0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(100vw - 400px);
+  height: calc(100vh - 400px);
+  padding: 200px;
+}
+
+.register {
+  padding: 40px;
+  width: 50%;
+  background-color: #fff;
+}
+
+.register__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.register__label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.register__input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register__button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register__button:hover {
+  background-color: #0056b3;
+}
+
+.register__side-panel {
+  background-image: url('../../assets/loginpattern.webp'); /* Update the path as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__side-panel img {
+  width: 50%;
+  height: auto;
+}
+
+/* Media Queries for iPhone 12 and newer */
+@media (max-width: 820px) {
+  .login-container,
+  .register_container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .login,
+  .register {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login__side-panel,
+  .register__side-panel {
+    width: 100%;
+    height: 200px;
+  }
+
+  .login__side-panel img,
+  .register__side-panel img {
+    width: 80%;
+  }
+} 

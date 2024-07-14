@@ -1,0 +1,52 @@
+/* settings.css */
+
+.settings-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-heading {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.settings-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings-section:hover {
+  transform: translateY(-5px);
+}
+
+.language {
+  background-color: #cce5ff;
+}
+
+.privacy {
+  background-color: #d4edda;
+}
+
+.device {
+  background-color: #f8d7da;
+}
+
+.settings-section h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.settings-section p {
+  color: #666;
+}

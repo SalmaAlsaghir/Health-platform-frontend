@@ -1,0 +1,74 @@
+/* health-monitoring.css */
+
+.health-monitoring-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-heading {
+  text-align: center;
+  color: #004d65;
+}
+
+.monitoring-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.monitoring-section {
+  display: flex;
+  justify-content: center;
+}
+
+.section-box {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-box:hover {
+  transform: translateY(-5px);
+}
+
+.green {
+  background-color: #008cb4;
+  color: #fff;
+}
+
+.blue {
+  background-color: #008cb4;
+  color: #fff;
+}
+
+.red {
+  background-color: #008cb4;
+  color: #fff;
+}
+
+.section-box h3 {
+  margin-bottom: 10px;
+}
+
+
+
+.section-box.green p {
+  color: #000000; 
+}
+
+.section-box.blue p {
+  color: #000000; 
+}
+
+.section-box.red p {
+  color: #000000;
+}
